@@ -18,4 +18,11 @@ export class AppController {
       timestamp: new Date().toISOString(),
     };
   }
+
+  @Get('aws')
+  getAwsMessage() {
+    return {
+      message: 'Hello from AWS EC2 via CI/CD!',
+    };
+  }
 }
